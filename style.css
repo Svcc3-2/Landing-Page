@@ -1,0 +1,203 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  transition: all 1.5s ease;
+}
+
+header img {
+  width: 100px;
+  height: 40px;
+}
+
+/* Header underline */
+header a {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+header a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.headline-text {
+  font-weight: bold;
+  font-size: 100px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+/* animation Headline */
+.fade-in-headline {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.desc {
+  font-weight: 500;
+  text-align: justify;
+}
+
+#carouselBlogControl .card {
+  width: 650px;
+  height: 650px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: #030120 1px solid;
+}
+
+.btn:hover {
+  background-color: #030120;
+  color: white;
+}
+
+/* Portofolio animation scaling up */
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+  cursor: pointer;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+}
+
+button {
+  color: #030120;
+}
+
+/* animasi panah */
+.item button {
+  transition: 0.5s ease;
+}
+
+.item button:hover i {
+  color: white;
+}
+
+.item i {
+  color: #030120;
+  margin-left: 20px;
+}
+
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+.accordion-body {
+  text-align: justify;
+  width: 70%;
+}
+
+footer {
+  background-color: #030120;
+}
+
+footer img {
+  width: 150px;
+  height: 50px;
+}
+
+footer i {
+  color: white;
+}
+
+.address {
+  text-align: justify;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+}
+
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
+svg path {
+  fill: #030120;
+}
