@@ -95,6 +95,10 @@ header a:hover:after {
   }
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 .desc {
   font-weight: 500;
   text-align: justify;
@@ -131,6 +135,10 @@ header a:hover:after {
 
 button {
   color: #030120;
+}
+
+.portofolio .inner img {
+  height: 150px;
 }
 
 /* animasi panah */
@@ -202,11 +210,24 @@ svg path {
 }
 
 @media only screen and (max-width: 990px) {
+  #descImage {
+    visibility: hidden;
+  }
+
   #carouselBlogControl .card {
     max-width: 540px;
   }
 
   #carouselBlogControl svg {
     visibility: hidden;
+  }
+
+  .product img {
+    width: 50%;
+  }
+
+  .accordion-body {
+    text-align: justify;
+    width: 100%;
   }
 }
