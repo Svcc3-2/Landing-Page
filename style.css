@@ -141,6 +141,10 @@ button {
   height: 150px;
 }
 
+.blog card-text {
+  width: 100%;
+}
+
 /* animasi panah */
 .item button {
   transition: 0.5s ease;
@@ -229,5 +233,8 @@ svg path {
   .accordion-body {
     text-align: justify;
     width: 100%;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
